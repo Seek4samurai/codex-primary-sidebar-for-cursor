@@ -1,0 +1,40 @@
+{
+  "name": "codex-primary-sidebar-for-cursor",
+  "displayName": "Codex Primary Sidebar for Cursor",
+  "description": "Open the OpenAI Codex extension in Cursor's primary sidebar with one command.",
+  "version": "1.0.0",
+  "publisher": "cursor-codex-tools",
+  "license": "MIT",
+  "icon": "images/icon.png",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": ["Other"],
+  "keywords": ["codex", "openai", "cursor", "sidebar", "primary sidebar", "ai coding assistant"],
+  "extensionKind": ["ui"],
+  "extensionDependencies": [
+    "openai.chatgpt"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+    "onCommand:codexCursor.open"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codexCursor.open",
+        "title": "Open Codex in Primary Sidebar",
+        "category": "Codex"
+      }
+    ]
+  },
+  "scripts": {
+    "check": "node --check extension.js",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.6.2"
+  }
+}
