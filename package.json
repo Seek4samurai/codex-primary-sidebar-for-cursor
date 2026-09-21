@@ -3,15 +3,39 @@
   "displayName": "Codex Primary Sidebar for Cursor",
   "description": "Open the OpenAI Codex extension in Cursor's primary sidebar with one command.",
   "version": "1.0.0",
-  "publisher": "cursor-codex-tools",
   "license": "MIT",
+  "publisher": "seek4samurai",
+  "author": {
+    "name": "Gourav Singh Rawat",
+    "email": "grvrawat999@gmail.com",
+    "url": "https://github.com/Seek4samurai"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Seek4samurai/codex-primary-sidebar-for-cursor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Seek4samurai/codex-primary-sidebar-for-cursor/issues"
+  },
+  "homepage": "https://github.com/Seek4samurai/codex-primary-sidebar-for-cursor#readme",
   "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.90.0"
   },
-  "categories": ["Other"],
-  "keywords": ["codex", "openai", "cursor", "sidebar", "primary sidebar", "ai coding assistant"],
-  "extensionKind": ["ui"],
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "codex",
+    "openai",
+    "cursor",
+    "sidebar",
+    "primary sidebar",
+    "ai coding assistant"
+  ],
+  "extensionKind": [
+    "ui"
+  ],
   "extensionDependencies": [
     "openai.chatgpt"
   ],
@@ -38,3 +62,4 @@
     "@vscode/vsce": "^3.6.2"
   }
 }
+
